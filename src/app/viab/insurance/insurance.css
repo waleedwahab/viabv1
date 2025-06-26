@@ -1,0 +1,221 @@
+.insuranceSection {
+  background:var(--bg-gradient);
+  min-height: 100vh;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+.second-layer{
+ background-color:rgba(157, 150, 134, 0.5) !important; 
+}
+/* Headings */¸
+
+.insuranceopt .nav-tabs {
+  border-bottom: none;
+  gap: 1rem;
+  position: relative;
+}
+.insuranceopt h2 {
+  font-size: 2.2rem;
+  margin-bottom: 0.5rem;
+  color: #2d2d2d;
+}
+
+.insuranceopt p {
+  font-size: 1rem;
+  color: #4e4e4e;
+}
+
+/* Dropdowns */
+.insuranceopt .form-select {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  font-size: 0.95rem;
+}
+
+/* Tabs */
+.insuranceopt .nav-tabs .nav-link {
+  background: none;
+  border: none;
+  font-size: 1rem;
+  color: #666;
+  padding: 8px 0;
+  position: relative;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.insuranceopt .nav-tabs .nav-link:hover {
+  color: #000;
+}
+/* Tab wrapper */
+.role-tabs {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  width: fit-content;
+  margin: auto;
+  position: relative;
+}
+
+/* Individual tab items */
+.tab-item {
+  padding: 10px 15px;
+  cursor: pointer;
+  font-weight: 500;
+  color: #000;
+  position: relative;
+  z-index: 1;
+  transition: color 0.3s ease;
+}
+
+.tab-item:hover {
+  color: #4C56D1;
+}
+
+/* Selected tab */
+.tab-item.selected {
+  font-weight: bold;
+  color: #000;
+}
+
+/* Animated underline */
+.tab-underline {
+  position: absolute;
+  bottom: 0;
+  height: 3px;
+  background-color: #000;
+  transition: all 0.3s ease;
+  z-index: 0;
+  border-radius: 2px;
+}
+
+.layer3{
+    background-color: rgba(157, 150, 134, 0.5) !important;
+}
+/* .insuranceSection .fw-semibold {
+  font-weight: 600;
+}
+
+.insuranceSection h6 {
+  font-size: 1rem;
+  color: #222;
+} */
+
+/* .insuranceSection .btn-outline-dark {
+  font-size: 0.9rem;
+  padding: 6px 14px;
+  border-radius: 20px;
+  border: 1px solid #333;
+  color: #333;
+  transition: 0.3s ease;
+} */
+
+
+.insuranceopt .btn-outline-dark:hover {
+  background-color: #333;
+  color: #fff;
+}
+.select-plan-btn {
+  background-color: rgba(255, 255, 255, 1) !important;
+  color: #000; /* Optional: ensure text stays visible */
+  border: 1px solid #000;
+  transition: all 0.3s ease;
+}
+
+.select-plan-btn:hover {
+  background-color: transparent !important;
+  color: #000; /* Optional: keep text color consistent on hover */
+}
+/* Image Size */
+.insuranceSection img {
+  border-radius: 10px;
+  object-fit: contain;
+}
+
+/* Customize Sliders */
+.form-label {
+  font-weight: 500;
+  color: #333;
+}
+
+.form-range {
+  accent-color: #007bff;
+}
+
+.text-end {
+  font-weight: 500;
+  color: #222;
+}
+
+/* Buttons */
+/* .btn-primary {
+  background-color: #007bff;
+  border: none;
+  font-size: 0.95rem;
+  padding: 8px 20px;
+  border-radius: 8px;
+} */
+
+/* .btn-primary:hover {
+  background-color: #0069d9;
+} */
+/* Wrapper around the range + label/value */
+/* Deductible slider wrapper */
+.slider-group {
+  background-color: rgba(157, 150, 134, 0.5);
+  height: 120px;
+  border: none !important;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+/* Top row: Label and right-aligned value */
+.slider-group .form-label {
+  font-weight: 600;
+  color: #222;
+  font-size: 1rem;
+}
+
+.deductible-value {
+  font-weight: 600;
+  color: #333;
+  font-size: 1rem;
+}
+
+/* Range input style */
+input[type="range"].form-range {
+  accent-color: #007bff;
+  background-color: #e6e6e6;
+  border-radius: 3px;
+  height: 4px;
+}
+
+/* If any label is shown on the left — force hide */
+input[type="range"]::-webkit-slider-runnable-track,
+input[type="range"]::-moz-range-track {
+  background: transparent;
+}
+
+/* Prevent default tooltip popups (in case of native styles) */
+input[type="range"]::-webkit-slider-thumb::after,
+input[type="range"]::-moz-range-thumb::after {
+  display: none !important;
+}
+.phurchase-btn{
+  background-color: rgba(64, 122, 191, 1);
+  color:rgba(255, 255, 255, 1);
+  padding: 10px 24px;
+}
+.download-btn{
+  padding: 10px 24px;
+}
+.phurchase-btn:hover {
+  background-color: transparent !important;
+  color: #000; /* Optional: keep text color consistent on hover */
+  border: 1px solid black;
+}
+.download-btn:hover{
+  background-color: transparent !important;
+  color: #000; /* Optional: keep text color consistent on hover */
+  border: 1px solid black;
+}

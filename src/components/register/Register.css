@@ -1,0 +1,196 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+  /* background: linear-gradient(180deg, #C8AD7E 0%, #F5F5DD 50%, #FFFFFF 100%); */
+}
+
+.main-signup-div{
+/* background: var(--bg-gradient); */
+background-image: url("../../../public/assets/images/backgroundgrouped.png");
+background-size: cover;         /* Makes image fill the div */
+  background-position: center;    /* Keeps it centered */
+  background-repeat: no-repeat;   /* Prevents tiling */
+  /* background-attachment: fixed;  */
+}
+.border1{
+  border-top: 2px solid rgba(77, 77, 77, 1);
+  width: 40%;
+
+}
+.border2{
+  border-top: 2px solid rgba(77, 77, 77, 1);
+  width: 40%;
+
+} 
+.href-hover {
+  position: relative;
+  display: inline-block;
+  color: #e69a42;; /* base color */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.href-hover::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 2px;
+  background-color: #e69a42;;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s ease;
+}
+
+.href-hover:hover {
+  color: #e69a42 !important; /* darker on hover */
+}
+
+.href-hover:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.signup-image{
+
+
+}
+.signup-form-container {
+   margin: auto;
+  padding: 2rem;
+  border-radius: 20px;
+  width: 85%;
+  
+
+  /* Background gradients from Figma */
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.14), rgba(0, 0, 0, 0.14)),
+              linear-gradient(321.23deg, rgba(191, 191, 191, 0.062) 5.98%, rgba(0, 0, 0, 0) 66.28%);
+
+  /* Frosted glass effect */
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+
+  /* Subtle border and shadow */
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+
+  /* Optional: for white text inside */
+  color: white;
+
+
+}
+
+.signup-title { 
+  font-size: 28px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 1) !important;;
+  margin-bottom: 10px;
+}
+
+.signup-subtitle {
+  font-size: 14px;
+  color:  rgba(255, 255, 255, 1) !important;
+  margin-bottom: 20px;
+}
+
+.signup-input {
+  border-radius: 10px;
+  padding: 12.5px 15px;
+  border: 1px solid rgba(255, 255, 255, 1);
+  font-size: 14px;
+  background-color: transparent;
+  color: rgba(255, 255, 255, 1) !important;
+}
+
+.signup-input option {
+  border-radius: 10px;
+  padding: 10px 15px;
+  border: 1px solid rgba(255, 255, 255, 1);
+  font-size: 14px;
+  background-color: transparent;
+  color: rgba(255, 255, 255, 1);
+}
+.signup-input::placeholder {
+  color:  rgba(255, 255, 255, 1) !important;/* White with some transparency */
+  opacity: 1; /* Fix for Firefox */
+}
+
+.signup-input option {
+  background-color:rgba(157, 150, 134, 0.5);
+  color: #fff;
+  font-size: 14px;
+}
+.signup-input:focus {
+  background-color: transparent !important;
+
+ /* Optional: disables Bootstrap's blue glow */
+}
+
+.signup-button {
+  border-radius: 25px;
+  background-color:rgba(255, 255, 255, 1);
+  border: none;
+  font-weight: bold;
+  color: rgba(64, 64, 64, 1);
+  padding-top: 12.5px;
+  padding-bottom: 12.5px;
+   box-shadow: 5px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+}
+
+.signup-button:hover {
+  background-color: #e69a42;
+}
+
+.signup-or {
+  font-size: 14px;
+  color: #888;
+}
+
+.signup-socials {
+  font-size: 20px;
+}
+
+.signup-icon {
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.signup-icon:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.google {
+  color: #db4437;
+}
+
+.facebook {
+  color: #3b5998;
+}
+
+.github {
+  color: #333;
+}
+
+.signup-login-link {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 1) !important;
+}
+
+.signup-login-link a {
+  /* color: #f5af66; */
+ color:  rgba(255, 255, 255, 1) !important;
+  text-decoration: none;
+}
+
+.signup-login-link a:hover {
+  text-decoration: none;
+}
+.login-icons{
+    width: 42px;
+    height: 42px;
+}

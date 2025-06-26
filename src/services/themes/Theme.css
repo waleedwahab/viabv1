@@ -1,0 +1,18 @@
+/* src/theme.css */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+/* Default Light Theme */
+:root {
+  --bg-gradient:linear-gradient(180deg, #C8AD7E 0%, #F5F5DD 50%, #FFFFFF 100%);
+  --text-color: #222;
+  --btn-text:rgba(64, 64, 64, 1);
+  --btn-bg:rgba(255, 255, 255, 1);
+  --font-family: 'Inter', sans-serif;
+}
+
+/* Dark Theme Overrides */
+.theme-dark {
+  --bg-color: #1c1c1c;
+  --text-color: #f8f9fa;
+  --btn-bg: #343a40;
+  --btn-text: #fff;
+}

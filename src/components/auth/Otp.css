@@ -1,0 +1,100 @@
+/* Entrance animation for the card */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.otp-container {
+    background-image: url("/assets/images/backgroundgrouped.png");
+  background-size: 100% 100%;           /* Fill entire container */
+  background-position: center;      /* Center the image */
+  background-repeat: no-repeat;     /* Prevent repeating */
+    /* Optional: makes image scroll with content */
+  min-height: 100vh;                /* Ensures the image covers full screen */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background: linear-gradient(180deg, #C8AD7E 0%, #F5F5DD 50%, #FFFFFF 100%);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center; */
+}
+
+.otp-main-card {
+  background-color: rgba(157, 150, 134, 0.5);
+  animation: fadeInUp 0.8s ease-out;
+}
+
+.otp-card {
+ background: linear-gradient(0deg, rgba(0, 0, 0, 0.14), rgba(0, 0, 0, 0.14)),
+              linear-gradient(321.23deg, rgba(191, 191, 191, 0.062) 5.98%, rgba(0, 0, 0, 0) 66.28%);
+
+  /* Frosted glass effect */
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+
+  /* Subtle border and shadow */
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  animation: fadeInUp 1s ease-out;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.otp-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 8px 6px 10px rgba(0, 0, 0, 0.3);
+}
+
+.otp-inputs input {
+  width: 60px;
+  height: 60px;
+  font-size: 24px;
+  margin: 0 5px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  box-shadow: none;
+  transition: 0.2s ease-in-out;
+  text-align: center;
+}
+
+.otp-inputs input:focus {
+  border-color: #6C3483;
+  outline: none;
+  box-shadow: 0 0 8px rgba(108, 52, 131, 0.4);
+}
+
+/* Resend link hover effect */
+.resend-link {
+  color: purple;
+  font-weight: 500;
+  cursor: pointer;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+.resend-link:hover {
+  color: #6C3483;
+}
+
+/* Button style with hover */
+.btn-color-otp {
+  background-color: rgba(255, 255, 255, 1) !important;
+  border-radius: 20px;
+  box-shadow: 5px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  padding: 10px 20px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-color-otp:hover {
+  background-color: #eee !important;
+  transform: scale(1.03);
+}

@@ -1,0 +1,209 @@
+body {
+  margin: 0;
+  font-family:  var(--font-family);
+  background: var(--bg-gradient);
+}
+
+.app-container {
+  width: 95%;
+  max-width: 1100px;
+  margin: 30px auto;
+  background-color: var(--bg-gradient) !important;
+  border-radius: 14px;
+  /* padding: 30px; */
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+.fvrt-icon{
+width: 39px;
+height: 30px;
+margin-bottom: 6px;
+}
+.filter-wrapper {
+  display: flex;
+  justify-content: start;
+  margin-bottom: 20px;
+}
+
+.secondlayer{
+     background-color:rgba(157, 150, 134, 0.5); 
+
+}
+.filters {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: start;
+}
+
+.custom-select {
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  background-color: #fff;
+  cursor: pointer;
+}
+.custom-select:hover,
+.custom-select:focus {
+  border-color: #666;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
+}
+
+.filter-button {
+  padding: 6px 15px;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.filter-button:hover {
+  background-color: #e6e6e6;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.section h2 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.sub-title-fur {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  font-size: 19px;
+  font-weight: 700;
+  margin: 20px 0 10px;
+  color: #fff;
+}
+
+.card-grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card-box {
+  background: rgba(157, 150, 134, 1);
+  border-radius: 12px;
+  overflow: hidden;
+  width: calc(25% - 15px);
+  min-width: 240px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+}
+
+.card-box:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+}
+
+.card-img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.card-box:hover .card-img {
+  transform: scale(1.05);
+}
+
+
+.card-info {
+  padding: 10px;
+  text-align: center;
+}
+
+.card-title {
+  font-weight: 500;
+  font-size: 16px;
+  margin-bottom: 2px;
+  color: rgba(255, 255, 255, 1);
+}
+
+.card-price {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 2px;
+}
+
+.card-actions {
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  gap: 10px;
+}
+
+.add-cart {
+  border: 1px solid #000;
+  background: var(--btn-bg);
+  padding: 9px 12px;
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: 6px;
+  cursor: pointer;
+  border: none;
+}
+
+.fvrt-icon {
+  width: 30px;
+  height: 30px;
+  margin-bottom: 6px;
+  transition: transform 0.2s ease;
+  cursor: pointer;
+}
+
+.fvrt-icon:hover {
+  transform: scale(1.2);
+  filter: brightness(1.2);
+}
+.heart {
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.furniture-grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.furniture-box {
+  background: #f0f0f0;
+  border-radius: 12px;
+  width: calc(25% - 15px);
+  min-width: 240px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+}
+
+.furniture-box.more {
+  background: #ddd;
+  font-size: 26px;
+  font-weight: bold;
+}
+.market-place-head{
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 35px;
+    color:rgba(255, 255, 255, 1)
+}
+.home-cards{
+    background-color:rgba(157, 150, 134, 0.5)
+    
+}

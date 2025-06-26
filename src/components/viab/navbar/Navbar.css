@@ -1,0 +1,105 @@
+.navbar-custom {
+  background-color: rgb(106, 97, 84);
+  transition: background-color 0.3s ease-in-out;
+}
+
+.navbar-brand {
+  color: white !important;
+  transition: color 0.3s ease-in-out;
+}
+
+.navbar-brand:hover {
+  color: #ddd !important;
+  letter-spacing: 1px;
+}
+.navbar-nav .nav-link.active {
+  color: #ccc;
+}
+
+.navbar-nav .nav-link.active::after {
+  width: 100%;
+}
+
+
+.navbar-nav .nav-link {
+  color: white;
+  font-weight: 500;
+  font-size: 15px;
+  position: relative;
+  transition: color 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  left: 0;
+  bottom: -4px;
+  background-color: white;
+  transition: width 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #ccc;
+}
+
+.navbar-nav .nav-link:hover::after {
+  width: 100%;
+}
+
+/* Search Box */
+.search-box {
+  background-color: white;
+  border-radius: 12px;
+  height: 36px;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.search-box:hover {
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
+}
+
+.search-input {
+  border: none;
+  outline: none;
+  background: transparent;
+  width: 200px;
+  font-size: 14px;
+  transition: width 0.3s ease-in-out;
+}
+
+.search-input:focus {
+  width: 250px;
+}
+
+/* Icon Button */
+.icon-btn {
+  background-color: white;
+  border-radius: 12px;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.icon-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Profile Picture */
+.profile-pic {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.profile-pic:hover {
+  transform: rotate(5deg) scale(1.05);
+}
