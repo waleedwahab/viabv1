@@ -16,7 +16,7 @@ const Insurance = () => {
 
   const [underlineStyle, setUnderlineStyle] = useState({});
     useEffect(() => {
-    const currentTab: any = tabRefs.current[selectedTab];
+    const currentTab = tabRefs.current[selectedTab];
     if (currentTab) {
       setUnderlineStyle({
         width: `${currentTab.offsetWidth}px`,

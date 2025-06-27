@@ -2,8 +2,7 @@
 // import { furniture, products } from "../../constants/constants";
 // import 'bootstrap/dist/css/bootstrap.min.css';
 import { useState } from "react";
-// import { assets } from "@/services/utilities/assets/Index";
-import favrticon from "../../../../public/assets/icons/png/favouriteicon.png"
+// import { assets } from "@/services/utilities/assets/Index";;
 import Image from "next/image";
 import"./Home.css";
 
@@ -124,7 +123,7 @@ const products = [
                     <div>
                       {" "}
                       <Image
-                        src={favrticon}
+                        src="/assets/icons/png/favouriteicon.png"
                         className="fvrt-icon"
                         width={100}
                         height={100}
@@ -161,7 +160,7 @@ const products = [
                         width={100}
                         height={100}
                         alt={""}
-                        src={favrticon}
+                        src="/assets/icons/png/favouriteicon.png"
                         className="fvrt-icon"
                       />{" "}
                     </div>

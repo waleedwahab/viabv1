@@ -2,13 +2,12 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import { useRouter, usePathname } from 'next/navigation';
+import {usePathname } from 'next/navigation';
 
 // import profilePic from './assets/profile.jpg'; // Replace with your own image
 import { FaSearch, FaEnvelope } from "react-icons/fa";
 import "./Navbar.css";
 const Navbar = () => {
-  const router = useRouter();
   const logOutt = () => {
     console.log("in logout");
   };
