@@ -130,7 +130,7 @@ const steps = [
     onClick={() => setSelected("customer2")}
     // ref={el => tabRefs.customer2 = el}
   >
-    Customer
+    Insurance
   </div>
   <div className="tab-underline" style={underlineStyle}></div>
 </div>
