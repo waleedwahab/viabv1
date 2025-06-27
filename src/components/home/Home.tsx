@@ -107,7 +107,7 @@ const products = [
         
         <div className="home-cards w-100 pt-3 ps-3 pe-3 pb-5">
           <div className="card-grid">
-            {products.map((product:any, i:any) => (
+            {products.map((product, i:number) => (
               <div className="card-box" key={i}>
                 { <Image
                   src={product.image}
@@ -141,48 +141,35 @@ const products = [
 
           <h5 className="sub-title-fur mt-5 pb-3">All Furniture</h5>
           <div className="card-grid">
-            {furniture.map((product:any, i:any) => (
-              <div className="card-box" key={i}>
-                {<Image
-                  src={product.image}
-                  width={100}
-                  height={100}
-                  alt={product.name}
-                  className="card-img"
-                /> }
-                <div className="card-info">
-                  <div className="text-start">
-                    <div className="card-title">{product.name}</div>
-                    <div className="card-price">{product.price}</div>
-                    <div>
-                      {" "}
-                      <Image
-                        width={100}
-                        height={100}
-                        alt={""}
-                        src="/assets/icons/png/favouriteicon.png"
-                        className="fvrt-icon"
-                      />{" "}
-                    </div>
-                  </div>
-                  <div className="card-actions ps-4 pe-4 mt-2">
-                    <button className="add-cart w-100">Add to Cart</button>
-                  </div>
-                </div>
-              </div>
-            ))}
-            {/* {furniture.map((item, i) => (
-            <div className="card-box" key={i}>
-              <img src={item.image} alt={item.name} className="card-img" />
-              <div className="card-info">
-                <div className="card-title">{item.name}</div>
-                <div className="card-actions">
-                  <button className="add-cart">View</button>
-                     <img src = {favouriteicon} className='fvrt-icon'></img>
-                </div>
-              </div>
-            </div>
-          ))} */}
+           {furniture.map((product, i: number) => (
+  <div className="card-box" key={i}>
+    <Image
+      src={product.image}
+      width={100}
+      height={100}
+      alt={product.name}
+      className="card-img"
+    />
+    <div className="card-info">
+      <div className="text-start">
+        <div className="card-title">{product.name}</div>
+        <div className="card-price">{product.price}</div>
+        <div>
+          <Image
+            width={100}
+            height={100}
+            alt="Favourite Icon"
+            src="/assets/icons/png/favouriteicon.png"
+            className="fvrt-icon"
+          />
+        </div>
+      </div>
+      <div className="card-actions ps-4 pe-4 mt-2">
+        <button className="add-cart w-100">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+))}
           </div>
         </div>
       </div>
@@ -193,4 +180,3 @@ const products = [
 
 export default Home;
 
-/* App.css */

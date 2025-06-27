@@ -1,14 +1,12 @@
 "use client";
 import "./LandingPage.css";
-import React, { useState, useRef, useEffect } from "react";
-import leftarrow from "../../../public/assets/icons/png/left-arrow.png";
+import React, { useState } from "react";
 import { useRouter } from 'next/navigation';
 const LandingPage = () => {
   
    const [selected, setSelected] = useState("customer");
-  const [underlineStyle, setUnderlineStyle] = useState({});
-  const tabRefs = useRef({});
-    const router = useRouter();
+  const [underlineStyle] = useState({});
+   const router = useRouter();
 
   const handleLoginClick = () => {
     router.push('/auth/login'); // Navigates to /auth/login

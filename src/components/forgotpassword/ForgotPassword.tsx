@@ -1,13 +1,13 @@
 "use client";
-import { useState } from "react";
+import { useState,FormEvent  } from "react";
 import "./ForgotPassword.css"
 const ForgotPassword = () => {
   const [email, setEmail] = useState("");
 
-  const handleSubmit = (e: any) => {
-    e.preventDefault();
-    alert(`Reset link sent to: ${email}`);
-  };
+const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
+  e.preventDefault();
+  alert(`Reset link sent to: ${email}`);
+};
 
   return (
   

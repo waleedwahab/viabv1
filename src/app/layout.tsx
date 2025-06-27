@@ -1,7 +1,7 @@
 "use client";
 import "./globals.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "bootstrap/dist/js/bootstrap.bundle.min.js";
+// import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import { usePathname } from "next/navigation";
 import Navbar from  "../components/viab/navbar/Navbar"
 // import Footer from "@/components/Footer";

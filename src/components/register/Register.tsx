@@ -3,7 +3,8 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 import axios from 'axios';
-import { ValidationError } from "yup";
+import { AxiosError } from "axios";
+import { ValidationError } from 'yup';
 import {signupValidationSchema } from "../../validations/SignupValidation"
 import signup1 from "../../../public/assets/images/loginimage1.png";
 import facebookicon from "../../../public/assets/icons/png/facebookicon.png";
@@ -70,21 +71,24 @@ const Signup: React.FC = () => {
       } else {
         setApiError('OTP token not received from server.');
       }
-    } catch (err) {
-      if (err instanceof ValidationError) {
-        const formErrors: Errors = {};
-        err.inner.forEach((error) => {
-          if (error.path) {
-            formErrors[error.path] = error.message;
-          }
-        });
-        setErrors(formErrors);
-      } else if (axios.isAxiosError(err)) {
-        setApiError(err.response?.data?.message || 'Failed to register user');
-      } else {
-        setApiError((err as Error).message || 'Something went wrong');
+    } catch (err: unknown) {
+  if (err instanceof ValidationError) {
+    const formErrors: Errors = {};
+    err.inner.forEach((error) => {
+      if (error.path) {
+        formErrors[error.path] = error.message;
       }
-    }
+    });
+    setErrors(formErrors);
+  } else if ((err as AxiosError).isAxiosError && (err as AxiosError).response?.data) {
+    const axiosError = err as AxiosError<{ message: string }>;
+    setApiError(axiosError.response?.data?.message || 'Failed to register user');
+  } else if (err instanceof Error) {
+    setApiError(err.message || 'Something went wrong');
+  } else {
+    setApiError('Something went wrong');
+  }
+}
   };
 
   return (

@@ -46,8 +46,8 @@ const Navbar = () => {
             </li>
             <li className="nav-item">
                     <Link
-  href="/viab/drawings"
-  className={`nav-link ${pathname === "/viab/drawings" ? "active" : ""}`}
+  href="/viab/generatedrawings"
+  className={`nav-link ${pathname === "/viab/generatedrawings" ? "active" : ""}`}
 >
   Generate Drawings
 </Link>

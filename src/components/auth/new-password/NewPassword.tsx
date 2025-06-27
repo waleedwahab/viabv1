@@ -3,13 +3,14 @@ import { useState } from "react";
 import "./NewPassword.css";
 import axios from "axios";
 import { useRouter } from "next/navigation";
+import React from "react";
 
 const NewPasswordPage = () => {
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
   const route = useRouter();
 
-  const handleSubmit = async (e: any) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
     if (!password || !confirmPassword) {
@@ -23,7 +24,7 @@ const NewPasswordPage = () => {
     }
 
     try {
-      const resetToken = sessionStorage.getItem("resetToken"); // assuming token is stored here
+      const resetToken = sessionStorage.getItem("resetToken");
 
       if (!resetToken) {
         alert("Reset token missing. Please try again.");
@@ -47,10 +48,14 @@ const NewPasswordPage = () => {
       } else {
         alert("Password reset failed.");
       }
-    } catch (error: any) {
-      alert(
-        error.response?.data?.message || "An error occurred. Please try again."
-      );
+    } catch (error: unknown) {
+      if (axios.isAxiosError(error)) {
+        alert(error.response?.data?.message || "An error occurred. Please try again.");
+      } else if (error instanceof Error) {
+        alert(error.message);
+      } else {
+        alert("An unknown error occurred.");
+      }
     }
   };
 
@@ -79,7 +84,7 @@ const NewPasswordPage = () => {
           />
           <button
             type="submit"
-            className="btn btn-color-otp   mt-2"
+            className="btn btn-color-otp mt-2"
           >
             Save New Password
           </button>

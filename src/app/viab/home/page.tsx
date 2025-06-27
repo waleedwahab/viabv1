@@ -1,14 +1,10 @@
 "use client";
-import Home from "../../../components/home/Home"
-
-const page = () => {
-  return (
+import Home from "@/components/home/Home";
+const page = ()=>{
+  return(
     <>
-      <Home />
+  <Home/>
     </>
-  );
+  )
 }
-
-export default page;
-
-
+export default page

@@ -1,14 +1,16 @@
-"use client";;
-import Insurance from "../../../components/viab/insurance/Insurance";
+"use client";
+import "bootstrap/dist/css/bootstrap.min.css";
+import Insurance from "@/components/viab/insurance/Insurance";
 
-const page = () => {
-  return (
+const page = ()=>{
+  return(
     <>
-      <Insurance />
+  <Insurance/>
     </>
-  );
+  )
 }
+export default page
 
-export default page;
 
-/* App.css */
+
+
